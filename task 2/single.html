@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    
+    <style>
+        /* General styling */
+        body {
+            background-color: #E9F4E9;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #91C499;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            color: #333;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #B9D8B9;
+        }
+
+        .navbar a.active {
+            background-color: #6F9E6F;
+            color: #fff;
+        }
+
+        /* Full-screen Home section styling */
+        #home {
+            background-color: #C8E6C9;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #home h2 {
+            font-size: 3em;
+            margin: 0;
+            color: #2E7D32;
+        }
+
+        #home p {
+            font-size: 1.5em;
+            color: #4C8C4A;
+            max-width: 600px;
+        }
+
+        /* Section styling */
+        section {
+            padding: 60px;
+            text-align: center;
+            background-color: #E9F4E9;
+        }
+
+        /* Specific section colors */
+        #about {
+            background-color: #F1EFE6;
+        }
+
+        #skills, #resume {
+            background-color: #E3F2E1;
+        }
+
+        #projects {
+            background-color: #F9F5EC;
+        }
+
+        #contact {
+            background-color: #F5F0E3;
+        }
+
+        /* Image styling */
+        img {
+            border-radius: 8px;
+            display: block;
+            margin: 20px auto;
+            width: 20%;
+        }
+
+        /* About section text styling */
+        #about p {
+            text-align: justify; /* Justify the text */
+            max-width: 800px; /* Optional: limits the width of the paragraph for better readability */
+            margin: 0 auto; /* Center the paragraph in the section */
+        }
+
+        /* Skills list styling */
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        #skills li {
+            padding: 5px 0;
+            color: #2E7D32;
+        }
+
+        /* Contact form styling */
+        form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        form label, form input, form textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #91C499;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6F9E6F;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #91C499;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* Projects section styling */
+        .project {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .project img {
+            width: 40%; /* Width of project image */
+            margin-left: 20px; /* Spacing between image and description */
+        }
+
+        .project-description {
+            text-align: left; /* Align text to the left */
+            width: 55%; /* Width of the description */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar structure -->
+    <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Full-screen Home Section -->
+    <section id="home">
+        <h2>Hello everyone, I'm SANJAAI RAJAN</h2>
+        <p>This is a simple portfolio page that provides insights about me, my skills, projects, and resume.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <img src="sanjaai photo.jpg" alt="Sanjaai Photo">
+        <p>I am currently pursuing my UG degree in B.Tech CSE. My skills include HTML, CSS, Python, and Canva. I am also the secretary of CYBORG CLUB, the technical club at our college. I am interested in Web Development and Data Analytics, and I am always eager to upskill myself.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>Canva</li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can view or download my resume <a href="path/to/your/resume.pdf" target="_blank">here</a>.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>PROJECTS</h2>
+        
+        <div class="project">
+            <div class="project-description">
+                <h3>AMAZON SALES DATA ANALYSIS</h3>
+                <p>Amazon sales data analysis that targets total profits, units sold, total revenue, and many more parameters. Used Power BI to create a dashboard and SVM algorithm for analysis.</p>
+            </div>
+            <img src="IMG1.png" alt="Project 1 Screenshot">
+        </div>
+
+        <div class="project">
+            <div class="project-description">
+                <h3>CANVA POSTER FOR CLUB</h3>
+                <p>This poster is designed for a paper and poster presentation event.</p>
+            </div>
+            <img src="POSTER.png" alt="Project 2 Screenshot">
+        </div>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions, feel free to reach out using the form below:</p>
+        <form action="your_form_handler.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+        <div class="social-handles">
+            <h3>Connect with me:</h3>
+            <p>
+                <a href="https://www.linkedin.com/in/sanjaai-raajan-8b3a4724b/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 SANJAAI RAJAN. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
