@@ -6,7 +6,7 @@
     <title>Task 2</title>
     
     <style>
-        /* General styling */
+        
         body {
             background-color: #E9F4E9;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -15,21 +15,36 @@
             color: #333;
         }
 
-        /* Navbar styling */
+        
         .navbar {
             background-color: #91C499;
             overflow: hidden;
             position: sticky;
             top: 0;
             z-index: 1000;
+            display: flex;
+            align-items: center;
+            
+        }
+
+    
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .logo {
+            max-height: 200px;
+            margin-right: 15px;
         }
 
         .navbar a {
-            float: left;
             color: #333;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            font-weight: bold;
         }
 
         .navbar a:hover {
@@ -41,7 +56,7 @@
             color: #fff;
         }
 
-        /* Full-screen Home section styling */
+        
         #home {
             background-color: #C8E6C9;
             height: 100vh;
@@ -65,31 +80,20 @@
             max-width: 600px;
         }
 
-        /* Section styling */
+       
         section {
             padding: 60px;
             text-align: center;
             background-color: #E9F4E9;
         }
 
-        /* Specific section colors */
-        #about {
-            background-color: #F1EFE6;
-        }
+       
+        #about { background-color: #F1EFE6; }
+        #skills, #resume { background-color: #E3F2E1; }
+        #projects { background-color: #F9F5EC; }
+        #contact { background-color: #F5F0E3; }
 
-        #skills, #resume {
-            background-color: #E3F2E1;
-        }
-
-        #projects {
-            background-color: #F9F5EC;
-        }
-
-        #contact {
-            background-color: #F5F0E3;
-        }
-
-        /* Image styling */
+        
         img {
             border-radius: 8px;
             display: block;
@@ -97,26 +101,23 @@
             width: 20%;
         }
 
-        /* About section text styling */
+        
         #about p {
-            text-align: justify; /* Justify the text */
-            max-width: 800px; /* Optional: limits the width of the paragraph for better readability */
-            margin: 0 auto; /* Center the paragraph in the section */
+            text-align: justify;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        /* Skills list styling */
+        
         #skills ul {
             list-style-type: none;
             padding: 0;
             font-size: 1.2em;
         }
 
-        #skills li {
-            padding: 5px 0;
-            color: #2E7D32;
-        }
+        #skills li { padding: 5px 0; color: #2E7D32; }
 
-        /* Contact form styling */
+        
         form {
             max-width: 600px;
             margin: auto;
@@ -148,7 +149,7 @@
             background-color: #6F9E6F;
         }
 
-        /* Footer styling */
+        
         footer {
             background-color: #91C499;
             color: white;
@@ -157,29 +158,25 @@
             font-size: 0.9em;
         }
 
-        /* Projects section styling */
+      
         .project {
-            display: flex; /* Use flexbox for layout */
+            display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 20px 0;
         }
 
-        .project img {
-            width: 40%; /* Width of project image */
-            margin-left: 20px; /* Spacing between image and description */
-        }
-
-        .project-description {
-            text-align: left; /* Align text to the left */
-            width: 55%; /* Width of the description */
-        }
+        .project img { width: 40%; margin-left: 20px; }
+        .project-description { text-align: left; width: 55%; }
     </style>
 </head>
 <body>
 
-    <!-- Navigation bar structure -->
+    
     <div class="navbar">
+        <div class="logo-container">
+            <img src="sanjaai photo.jpg" alt="Logo" class="logo"> 
+        </div>
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -188,20 +185,20 @@
         <a href="#contact">Contact</a>
     </div>
 
-    <!-- Full-screen Home Section -->
+   
     <section id="home">
-        <h2>Hello everyone, I'm SANJAAI RAJAN</h2>
+        <h2>Hello everyone, I'm SANJAAI RAAJAN</h2>
         <p>This is a simple portfolio page that provides insights about me, my skills, projects, and resume.</p>
     </section>
 
-    <!-- About Section -->
+    
     <section id="about">
         <h2>About</h2>
         <img src="sanjaai photo.jpg" alt="Sanjaai Photo">
         <p>I am currently pursuing my UG degree in B.Tech CSE. My skills include HTML, CSS, Python, and Canva. I am also the secretary of CYBORG CLUB, the technical club at our college. I am interested in Web Development and Data Analytics, and I am always eager to upskill myself.</p>
     </section>
 
-    <!-- Skills Section -->
+    
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -212,20 +209,20 @@
         </ul>
     </section>
 
-    <!-- Resume Section -->
+    
     <section id="resume">
         <h2>Resume</h2>
-        <p>You can view or download my resume <a href="path/to/your/resume.pdf" target="_blank">here</a>.</p>
+        <p>You can view or download my resume <a href="resume.pdf" target="_blank">here</a>.</p>
     </section>
 
-    <!-- Projects Section -->
+    
     <section id="projects">
         <h2>PROJECTS</h2>
         
         <div class="project">
             <div class="project-description">
                 <h3>AMAZON SALES DATA ANALYSIS</h3>
-                <p>Amazon sales data analysis that targets total profits, units sold, total revenue, and many more parameters. Used Power BI to create a dashboard and SVM algorithm for analysis.</p>
+                <p>Analyzed Amazon sales data focusing on total profits, units sold, total revenue, and other parameters, using Power BI for a dashboard and SVM algorithm for analysis.</p>
             </div>
             <img src="IMG1.png" alt="Project 1 Screenshot">
         </div>
@@ -233,17 +230,17 @@
         <div class="project">
             <div class="project-description">
                 <h3>CANVA POSTER FOR CLUB</h3>
-                <p>This poster is designed for a paper and poster presentation event.</p>
+                <p>Designed a poster for a paper and poster presentation event using Canva.</p>
             </div>
             <img src="POSTER.png" alt="Project 2 Screenshot">
         </div>
         
     </section>
 
-    <!-- Contact Section -->
+    
     <section id="contact">
         <h2>Contact</h2>
-        <p>If you have any questions, feel free to reach out using the form below:</p>
+        <p>If you have any questions, feel free to reach out using the form below or connect with me on LinkedIn:</p>
         <form action="your_form_handler.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -256,19 +253,12 @@
 
             <input type="submit" value="Send Message">
         </form>
-        <div class="social-handles">
-            <h3>Connect with me:</h3>
-            <p>
-                <a href="https://www.linkedin.com/in/sanjaai-raajan-8b3a4724b/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
-                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-            </p>
-        </div>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/sanjaai-raajan-8b3a4724b/" target="_blank">LinkedIn</a>.</p>
     </section>
 
-    <!-- Footer Section -->
+    
     <footer>
-        <p>&copy; 2024 SANJAAI RAJAN. All rights reserved.</p>
+        <p>&copy; 2024 SANJAAI RAAJAN. All rights reserved.</p>
     </footer>
 
 </body>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALHAMBRA - Men's Accessories</title>
+    <style>
+        body {
+            background-image: url("LOGO.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 5rem;
+            color: #FFD700;
+            margin: 80px 0 20px 0;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #FFD700;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+            background-color: rgba(0, 0, 0, 0.7);
+            flex-direction: column;
+        }
+        #home:target,
+        #productDisplay:target,
+        #contactUs:target {
+            display: flex;
+        }
+        .about-us {
+            font-size: 2rem;
+            max-width: 800px;
+            line-height: 1.5;
+            margin: 20px;
+        }
+        footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #FFD700;
+            font-size: 1rem;
+        }
+        .contact-us {
+            display: none;
+            height: calc(100vh - 60px);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-us h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .contact-us form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-us input, .contact-us textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #FFD700;
+            background: transparent;
+            color: white;
+        }
+        .contact-us button {
+            background-color: #FFD700;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .contact-us button:hover {
+            background-color: #fff;
+            color: black;
+        }
+        .product-display {
+            display: none;
+            padding: 20px;
+            text-align: center;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .product {
+            display: inline-block;
+            margin: 20px;
+        }
+        img {
+            height: 250px;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#productDisplay">View Products</a>
+        <a href="#contactUs">Contact Us</a>
+    </div>
+
+    <div id="home" class="content">
+        <h1>ALHAMBRA</h1>
+        <div class="about-us">
+            <p>Welcome to ALHAMBRA, your ultimate destination for men's accessories. We pride ourselves on offering a wide range of high-quality products that elevate your style and confidence.</p>
+            <p>Our mission is to provide unique and stylish accessories that cater to every man’s needs, making it easier to express individuality through fashion.</p>
+            <p>Explore our collection and discover the perfect accessory to complement your style.</p>
+        </div>
+    </div>
+
+    <div id="productDisplay" class="product-display">
+        <h1>Product Display</h1>
+        <div class="product">
+            <img src="b1.jpg" alt="Product 1 - Stylish Bracelet">
+            <p>&#8377;2999</p>
+        </div>
+        <div class="product">
+            <img src="b2.jpg" alt="Product 2 - Elegant Cufflinks">
+            <p>&#8377;1,999</p>
+        </div>
+        <div class="product">
+            <img src="c1.jpg" alt="Product 3 - Trendy Necklace">
+            <p>&#8377;4,999</p>
+        </div>
+        <div class="product">
+            <img src="w1.jpg" alt="Watch 1 - Casual Watch">
+            <p>&#8377;1,499</p>
+        </div>
+        <div class="product">
+            <img src="w2.jpeg" alt="Watch 2 - Sporty Watch">
+            <p>&#8377;2,499</p>
+        </div>
+        <div class="product">
+            <img src="w3.jpg" alt="Watch 3 - Luxury Watch">
+            <p>&#8377;2,999</p>
+        </div>
+        <div class="product">
+            <img src="timex watch.jpg" alt="Timex Watch - Durable Watch">
+            <p>&#8377;4,999</p>
+        </div>
+        <div class="product">
+            <img src="armani watch.jpeg" alt="Armani Watch - Premium Watch">
+            <p>&#8377;32,500</p>
+        </div>
+        <div class="product">
+            <img src="rolex watch.jpg" alt="Rolex Watch - Luxury Timepiece">
+            <p>&#8377;5,00,000</p>
+        </div>
+    </div>
+
+    <div id="contactUs" class="contact-us">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="navigation">
+            <a href="#home">Back to About Us</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 ALHAMBRA. All rights reserved.
+    </footer>
+</body>
+</html>
